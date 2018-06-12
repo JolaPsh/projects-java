@@ -1,0 +1,53 @@
+$v-font-size: 16px;
+$v-font-family: Helvetica;
+
+$v-gradient: v-linear 8%;
+$v-grid-row-selected-background-color: #826b7e;
+$v-grid-row-selected-font-weight: bold;
+
+
+
+@import "../valo/valo.scss";
+@import "addons.scss";
+
+@mixin mytheme {
+  @include valo;
+  @include addons;
+
+  .v-button{
+    background-color: #8e6c89;
+  }
+
+  .v-button-save-and-cancel-btn {
+    height: 45px;
+    width: 90px;
+    background-color: #8e6c89;
+    color: white;
+    font-family: "Helvetica";
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    background-image: none;
+    text-align: center;
+    cursor: pointer;
+    text-shadow: #7ea4bd 0 1px 0;
+  }
+
+  .v-grid .v-grid-header th.v-grid-cell {
+    background: #8e6c89;
+    font-family: "Helvetica";
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+
+  }
+  .v-grid-row-selected > .v-grid-cell {
+    font-weight: bold;
+    color: white;
+    text-shadow: none;
+    text-decoration: none;
+  }
+
+
+}

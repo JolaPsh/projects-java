@@ -17,6 +17,5 @@ password: root
 database url: jdbc:mysql://localhost:3306/test
 
 ###Run your program or just execute it with Maven:
-git clone
-cd
-mvn spring-boot:run
+- git clone https://github.com/JolaPsh/projects-java.git
+- mvn spring-boot:run
