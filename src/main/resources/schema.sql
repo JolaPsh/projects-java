@@ -12,7 +12,7 @@ CREATE TABLE  book  (
    readAlready BIT NOT NULL
    )
 
-ENGINE=InnoDB DEFAULT CHARSET=utf8 DEFAULT COLLATE utf8_unicode_ci;;
+ENGINE=InnoDB DEFAULT CHARSET=utf8 DEFAULT COLLATE utf8_unicode_ci;
 
 
 INSERT INTO Book (title, description, author, isbn, printYear, readAlready)
