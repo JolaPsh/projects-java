@@ -12,9 +12,9 @@ the program, open a web browser and enter the following URL: http://localhost:80
 - change the path to your sql script in src/main/java/crudapplication/CrudApplication.class.
 
 Default properties:
-username: root
-password: root
-database url: jdbc:mysql://localhost:3306/test
+- username: root
+- password: root
+- database url: jdbc:mysql://localhost:3306/test
 
 ###Run your program or just execute it with Maven:
 - git clone https://github.com/JolaPsh/projects-java.git
