@@ -1,18 +1,16 @@
 use test;
-
 DROP TABLE IF EXISTS book;
-
 CREATE TABLE  book  (
    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-   title VARCHAR(100) NOT NULL,
+   title VARCHAR(200) NOT NULL,
    description VARCHAR(255) NOT NULL,
-   author VARCHAR(150) NOT NULL,
+   author VARCHAR(250) NOT NULL,
    isbn VARCHAR(20) NOT NULL,
    printYear INT(10) NOT NULL,
    readAlready BIT NOT NULL
    )
-
-ENGINE=InnoDB DEFAULT CHARSET=utf8 DEFAULT COLLATE utf8_unicode_ci;
+   ENGINE = InnoDB
+   DEFAULT CHARACTER SET = utf8;
 
 
 INSERT INTO Book (title, description, author, isbn, printYear, readAlready)
@@ -100,7 +98,7 @@ INSERT INTO Book (title, description, author, isbn, printYear, readAlready)
 VALUES ("Экстремальное программирование. Разработка через тестирование", "-", "Кент Бек", "978-5-496-025706", 2016, false);
 
 INSERT INTO Book (title, description, author, isbn, printYear, readAlready)
-VALUES ("Чистилище. Финал", "-", "Сергей Тармашев", "978-5-17-092806-4", 2017, false);
+VALUES ("Чистилище.Финал", "-", "Сергей Тармашев", "978-17-092806-4", 2017, false);
 
 INSERT INTO Book (title, description, author, isbn, printYear, readAlready)
 VALUES ("Почему Вселенная не может существовать без Бога?", "-", "Дипак Чопра", "978-5-17-089358-4", 2015, false);
