@@ -24,7 +24,7 @@ public class CrudApplication implements CommandLineRunner{
 	 */
 	@Override
 	public void run(String... args) throws Exception {
-		String script = "D:/app/src/main/resources/schema.sql";
+		String script = "D:/Git/app/src/main/resources/schema.sql";
 		ScriptRunner scriptRunner = new ScriptRunner(DriverManager.getConnection("jdbc:mysql://localhost:3306/test?useSSL=false", "root", "root"));
         scriptRunner.runScript(new BufferedReader(new FileReader(script)));
 

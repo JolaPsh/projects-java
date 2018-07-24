@@ -24,14 +24,7 @@ public class ServiceImpl {
 
     public List<Book> findAll() {
         entitymanager.getTransaction().begin();
-
-        CriteriaBuilder cb = entitymanager.getCriteriaBuilder();
-        CriteriaQuery<Book> cq = cb.createQuery(Book.class);
-        Root<Book> from = cq.from(Book.class);
-        CriteriaQuery<Book> select = cq.select(from);
-        TypedQuery<Book> tq = entitymanager.createQuery(select);
-
-        List<Book> books = tq.getResultList();
+        List<Book> books = entitymanager.createQuery("SELECT e FROM Book e").getResultList();
         entitymanager.getTransaction().commit();
         return books;
     }
@@ -42,12 +35,10 @@ public class ServiceImpl {
         entitymanager.getTransaction().commit();
     }
 
-
     public void merge(Book value) {
         entitymanager.getTransaction().begin();
         entitymanager.merge(value);
         entitymanager.getTransaction().commit();
-
     }
 
     public void delete(Long id) {
@@ -89,7 +80,6 @@ public class ServiceImpl {
 
         return tq.getResultList();
     }
-
 }
 
 
