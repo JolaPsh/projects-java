@@ -9,7 +9,7 @@ the program, open a web browser and enter the following URL: http://localhost:80
 ###Before you run this program!:
 - check your database connection (MySQL): username, password, database url -> see application.properties
 - change your properties in persistence.xml file -> user, password, url
-- change the path to your sql script in CrudApplication.class.
+- change the path to your sql script in CrudApplication.class, password, username, url
 
 Default properties:
 - username: root
