@@ -13,9 +13,9 @@ the program, open a web browser and enter the following URL: http://localhost:80
 
 Default properties:
 
-`username: root`
+`username: test`
 
-`password: root`
+`password: test`
 
 `database url: jdbc:mysql://localhost:3306/test`
 
